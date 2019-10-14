@@ -1,4 +1,4 @@
-package com.Pattern.StarPattern5;
+package com.Pattern.StarPattern;
 
 public class StarPattern5 {
 //           *

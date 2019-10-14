@@ -1,34 +1,71 @@
 package com.Pattern;
 
-import com.Pattern.StarPattern1.StarPattern1;
-import com.Pattern.StarPattern2.StarPattern2;
-import com.Pattern.StarPattern3.StarPattern3;
-import com.Pattern.StarPattern4.StarPattern4;
-import com.Pattern.StarPattern5.StarPattern5;
-import com.Pattern.StarPattern6.StarPattern6;
-import com.Pattern.StarPattern7.StarPattern7;
+import com.Pattern.AlphabetPattern.AlphabetPattern1;
+import com.Pattern.NumberPattern.NumberPattern1;
+import com.Pattern.StarPattern.StarPattern1;
+import com.Pattern.StarPattern.StarPattern2;
+import com.Pattern.StarPattern.StarPattern3;
+import com.Pattern.StarPattern.StarPattern4;
+import com.Pattern.StarPattern.StarPattern5;
+import com.Pattern.StarPattern.StarPattern6;
+import com.Pattern.StarPattern.StarPattern7;
 
 import java.util.Scanner;
 
-public class Main {
+class Main {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("-----------------------------------------------");
         System.out.println( "\t\t\t\t Menu");
         System.out.println("-----------------------------------------------");
-        System.out.println("Select Pattern");
-        switch(s.nextInt()){
-            case 1: StarPattern1 sp1= new StarPattern1();break;
-            case 2: StarPattern2 sp2= new StarPattern2();break;
-            case 3: StarPattern3 sp3= new StarPattern3();break;
-            case 4: StarPattern4 sp4= new StarPattern4();break;
+        System.out.println("Select Pattern -->" +
+                "\n\t -> 1.Star Pattern" +
+                "\n\t -> 2.Number Pattern" +
+                "\n\t -> 3.Alphabet Pattern ");
+        switch(s.nextInt()) {
+            case 1: switch (s.nextInt()) {
+                case 1:
+                    new StarPattern1();
+                    break;
+                case 2:
+                    new StarPattern2();
+                    break;
+                case 3:
+                     new StarPattern3();
+                    break;
+                case 4:
+                     new StarPattern4();
+                    break;
+                case 5:
+                    new StarPattern5();
+                    break;
+                case 6:
+                     new StarPattern6();
+                    break;
+                case 7:
+                     new StarPattern7();
+                    break;
+                default:
+                    System.out.println("Pls Choose correct pattern");
+            }break;
+            case 2: switch(s.nextInt()){
+                case 1:
+                    new NumberPattern1();break;
+                default:System.out.println("Pls Choose correct pattern");
 
-            case 5: StarPattern5 sp5= new StarPattern5();break;
-            case 6: StarPattern6 sp6= new StarPattern6();break;
-            case 7: StarPattern7 sp7= new StarPattern7();break;
-//            case 8: StarPattern8 sp8= new StarPattern8();break;
-//            case 9: StarPattern9 sp9= new StarPattern9();break;
+            }break;
+            case 3: switch(s.nextInt()){
+                case 1:
+                    new AlphabetPattern1();break;
+
+                default:System.out.println("Pls Choose correct pattern");
+
+            }
+            break;
+
+
+            default:System.out.println("Pls Choose correct pattern");
 
         }
     }

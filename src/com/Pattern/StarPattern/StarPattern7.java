@@ -1,4 +1,4 @@
-package com.Pattern.StarPattern7;
+package com.Pattern.StarPattern;
 
 import java.util.Scanner;
 

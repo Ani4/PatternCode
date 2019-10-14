@@ -16,7 +16,8 @@ class Main {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println("-----------------------------------------------");
+        String a;
+       do{ System.out.println("-----------------------------------------------");
         System.out.println( "\t\t\t\t Menu");
         System.out.println("-----------------------------------------------");
         System.out.println("Select Pattern -->" +
@@ -68,5 +69,10 @@ class Main {
             default:System.out.println("Pls Choose correct pattern");
 
         }
+           s.nextLine();
+           System.out.println("For exit write 'exit' || 'q' || 'quit'") ;
+        a=s.nextLine();
+        if(a.equals("exit")||a.equals("q")||a.equals("quit"))System.exit(0);
+       }while(true);
     }
 }

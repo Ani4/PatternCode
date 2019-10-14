@@ -1,7 +1,7 @@
 package com.Pattern.StarPattern6;
 
 public class StarPattern6 {
-    public static void main(String[] args) {
+    public StarPattern6() {
 //           *
 //          * *
 //         * * *

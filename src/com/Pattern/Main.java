@@ -19,7 +19,8 @@ class Main {
                 "\n\t -> 2.Number Pattern" +
                 "\n\t -> 3.Alphabet Pattern ");
         switch(s.nextInt()) {
-            case 1:switch (s.nextInt()) {
+            case 1:
+                System.out.println("Star Pattern");switch (s.nextInt()) {
                             case 1:
                                 new StarPattern1();
                                 break;
@@ -44,19 +45,32 @@ class Main {
                             case 8:
                                 new StarPattern8();
                                 break;
+                            case 9:
+                                new StarPattern9();
+                                break;
 
                             default:
                                 System.out.println("Pls Choose correct pattern");
             }break;
 
-            case 2: switch(s.nextInt()){
+            case 2:
+                System.out.println("Number Pattern"); switch(s.nextInt()){
                             case 1:
                                 new NumberPattern1();break;
+                            case 2:
+                                new NumberPattern2();break;
+                            case 3:
+                                new NumberPattern3();break;
+                            case 4:
+                                new NumberPattern4();break;
+
+
                             default:System.out.println("Pls Choose correct pattern");
 
             }break;
 
-            case 3: switch(s.nextInt()){
+            case 3:
+                System.out.println("Alphabet Pattern"); switch(s.nextInt()){
                             case 1:
                                 new AlphabetPattern1();break;
 

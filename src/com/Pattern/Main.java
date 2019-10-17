@@ -2,8 +2,7 @@ package com.Pattern;
 
 import com.Pattern.AlphabetPattern.*;
 import com.Pattern.NumberPattern.*;
-import com.Pattern.ShapePattern.ShapePattern1;
-import com.Pattern.ShapePattern.ShapePattern2;
+import com.Pattern.ShapePattern.*;
 import com.Pattern.StarPattern.*;
 
 import java.io.IOException;
@@ -12,15 +11,15 @@ import java.util.Scanner;
 class Main {
     public final static void cls()
     {
-//        System.out.println ("its tsfa" );
+
         try
         {
-//            System.out.println ("iafs" );
+
             final String os = System.getProperty("os.name");
 
             if (os.contains("Windows"))
             {
-                Runtime.getRuntime().exec("cls");            System.out.println ("its theresaf" );
+                Runtime.getRuntime().exec("cls");
 
             }
             else
@@ -31,12 +30,12 @@ class Main {
         }
         catch (final Exception e)
         {
-            System.out.println ("its there" );
+
         }
     }
 
     public static
-    void main ( String[] args ) throws IOException, InterruptedException {
+    void main ( String[] args ) throws Exception {
         Scanner s = new Scanner ( System.in );
         String  a;
         do {cls();
@@ -119,7 +118,15 @@ class Main {
                         case 1:
                             new AlphabetPattern1 ( );
                             break;
-
+                        case 2:
+                            new AlphabetPattern2 ( );
+                            break;
+                        case 3:
+                            new AlphabetPattern3 ( );
+                            break;
+                        case 4:
+                            new AlphabetPattern4 ( );
+                            break;
                         default:
                             System.out.println ( "Pls Choose correct pattern" );
 
@@ -134,6 +141,15 @@ class Main {
                             break;
                         case 2:
                             new ShapePattern2 ( );
+                            break;
+                        case 3:
+                            new ShapePattern3 ( );
+                            break;
+                        case 4:
+                            new ShapePattern4 ( );
+                            break;
+                        case 5:
+                            new ShapePattern5 ( );
                             break;
 
                         default:

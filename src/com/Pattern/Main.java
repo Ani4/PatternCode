@@ -6,15 +6,40 @@ import com.Pattern.ShapePattern.ShapePattern1;
 import com.Pattern.ShapePattern.ShapePattern2;
 import com.Pattern.StarPattern.*;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 class Main {
+    public final static void cls()
+    {
+//        System.out.println ("its tsfa" );
+        try
+        {
+//            System.out.println ("iafs" );
+            final String os = System.getProperty("os.name");
+
+            if (os.contains("Windows"))
+            {
+                Runtime.getRuntime().exec("cls");            System.out.println ("its theresaf" );
+
+            }
+            else
+            {
+                Runtime.getRuntime().exec("clear");
+
+            }
+        }
+        catch (final Exception e)
+        {
+            System.out.println ("its there" );
+        }
+    }
 
     public static
-    void main ( String[] args ) {
+    void main ( String[] args ) throws IOException, InterruptedException {
         Scanner s = new Scanner ( System.in );
         String  a;
-        do {
+        do {cls();
             System.out.println ( "-----------------------------------------------" );
             System.out.println ( "\t\t\t\t Menu" );
             System.out.println ( "-----------------------------------------------" );
